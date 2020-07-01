@@ -269,8 +269,6 @@ p {
 }
 
 h1,
-h2,
-h3,
 h4,
 h5,
 h6 {
@@ -281,7 +279,15 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
+h2,
+h3 {
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
 
+  letter-spacing: 0.2rem;
+}
 h1 a,
 h2 a,
 h3 a,
@@ -422,6 +428,7 @@ form > .fields {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+
   -moz-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -759,6 +766,7 @@ input[type="radio"] + label:before {
 
 .image:before {
   pointer-events: none;
+
   background-image: url("../../images/overlay.png");
   background-color: rgba(19, 21, 25, 0.5);
   border-radius: 4px;
@@ -775,6 +783,7 @@ input[type="radio"] + label:before {
 .image img {
   border-radius: 4px;
   display: block;
+  max-width: 40%;
 }
 
 .image.left,
@@ -789,8 +798,8 @@ input[type="radio"] + label:before {
 
 .image.left {
   float: left;
-  padding: 0 1.5em 1em 0;
-  top: 0.25em;
+  padding: 0 1.5em 0 0;
+  top: 0em;
 }
 
 .image.right {
@@ -801,18 +810,24 @@ input[type="radio"] + label:before {
 
 .image.fit {
   display: block;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   width: 100%;
+  align-items: center;
+  align-self: center;
 }
 
 .image.fit img {
-  width: 100%;
+  width: 40%;
+  max-width: 40%;
 }
 
 .image.main {
   display: block;
-  margin: 2.5rem 0;
+  margin: 1.5rem 0;
   width: 100%;
+
+  float: right;
+  text-align: center;
 }
 
 .image.main img {
@@ -950,7 +965,7 @@ ul.actions.fit li > * {
 }
 
 ul.actions.fit.stacked {
-  width: 100%;
+  width: 50%;
 }
 
 @media screen and (max-width: 480px) {
@@ -1274,7 +1289,7 @@ button {
   -ms-transition: -ms-transform 0.325s ease-in-out,
     -ms-filter 0.325s ease-in-out;
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-  background-image: url("../../images/bg1.jpg");
+  background-image: url("../../images/mainBG1.png");
   opacity: 0.2;
   background-position: center;
   background-size: cover;
@@ -1506,12 +1521,6 @@ body.is-preload #bg:before {
 #header nav ul li a:active {
   background-color: rgba(255, 255, 255, 0.175);
 }
-.proj ul {
-  list-style: none;
-}
-.proj ul li {
-  display: inline-block;
-}
 
 #header nav.use-middle:after {
   content: "";
@@ -1647,6 +1656,7 @@ body.is-preload #header .content .inner {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
@@ -1790,4 +1800,56 @@ body.is-article-visible #footer {
 
 body.is-preload #footer {
   opacity: 0;
+}
+
+#work .work1 {
+  margin-top: 2rem !important;
+  text-align: center !important;
+  text-transform: uppercase;
+}
+#work .contact1 {
+  margin-left: 5rem !important;
+  margin-bottom: 0 !important;
+  text-align: center !important;
+  text-transform: uppercase;
+}
+#work .text1 {
+  text-align: center !important;
+  text-transform: uppercase;
+  padding-top: 3rem !important;
+}
+#pricing .contact1 {
+  margin-left: 5rem !important;
+  margin-bottom: 0 !important;
+  text-align: center !important;
+  text-transform: uppercase;
+}
+#about .contact1 {
+  margin-left: 5rem !important;
+  margin-bottom: 0 !important;
+  text-align: center !important;
+  text-transform: uppercase;
+}
+.wa {
+  position: absolute;
+  bottom: 0em;
+  left: 0rem;
+}
+
+#wa {
+  z-index: 5;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+
+  opacity: 1 !important;
+}
+#wa img {
+  opacity: 0.6 !important;
+  position: absolute;
+
+  right: 1rem;
+  bottom: 1rem;
+
+  height: 3rem;
+  width: 3rem;
 }
