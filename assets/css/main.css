@@ -216,6 +216,72 @@ html {
   html {
     font-size: 11pt;
   }
+  #work {
+    display: -ms-flexbox !important;
+  }
+  #work .work1 {
+    max-width: 100%;
+    align-items: inherit !important;
+  }
+  #work .work1 .contact1 {
+    margin-left: 10pt !important;
+    max-width: 100%;
+    font-size: 8pt;
+    text-align: center !important;
+  }
+  #work .work11 {
+    max-width: 100%;
+    font-size: 12pt;
+    text-align: center !important;
+  }
+  #pricing {
+    display: -ms-flexbox !important;
+  }
+  #pricing .work1 {
+    max-width: 100%;
+    align-items: inherit !important;
+  }
+  #pricing .work1 .contact1 {
+    margin-left: 10pt !important;
+    max-width: 100%;
+    font-size: 9pt;
+    text-align: center !important;
+  }
+  #pricing .work11 {
+    max-width: 100%;
+    font-size: 12pt;
+    text-align: center !important;
+  }
+  #about {
+    display: -ms-flexbox !important;
+  }
+  #about .work1 {
+    max-width: 100%;
+    align-items: inherit !important;
+  }
+  #about .work1 .contact1 {
+    margin-left: 3pt !important;
+    max-width: 100%;
+    font-size: 8pt;
+    text-align: center !important;
+  }
+  #about .work1 .contact11 {
+    margin-left: 50pt !important;
+    max-width: 100%;
+    font-size: 8pt;
+    text-align: center !important;
+  }
+  #about .work11 {
+    max-width: 100%;
+    font-size: 12pt;
+    text-align: center !important;
+  }
+  #about .work12 {
+    padding-left: 2pt !important;
+    max-width: 100%;
+    font-size: 12pt;
+    text-align: center !important;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -1354,6 +1420,11 @@ body.is-preload #bg:before {
     padding: 2rem 1rem;
   }
 }
+@media screen and (max-width: 736px) {
+  #wrapper {
+    padding: 2rem 1rem;
+  }
+}
 
 @media screen and (max-width: 480px) {
   #wrapper {
@@ -1802,11 +1873,6 @@ body.is-preload #footer {
   opacity: 0;
 }
 
-#work .work1 {
-  margin-top: 2rem !important;
-  text-align: center !important;
-  text-transform: uppercase;
-}
 #work .contact1 {
   margin-left: 5rem !important;
   margin-bottom: 0 !important;
@@ -1852,4 +1918,10 @@ body.is-preload #footer {
 
   height: 3rem;
   width: 3rem;
+}
+#work .work1 {
+  display: inline-block !important;
+  margin-top: 2rem !important;
+  text-align: center !important;
+  text-transform: uppercase;
 }
