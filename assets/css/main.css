@@ -259,23 +259,7 @@ html {
     max-width: 100%;
     align-items: inherit !important;
   }
-  #about .work1 .contact1 {
-    margin-left: 3pt !important;
-    max-width: 100%;
-    font-size: 8pt;
-    text-align: center !important;
-  }
-  #about .work1 .contact11 {
-    margin-left: 50pt !important;
-    max-width: 100%;
-    font-size: 8pt;
-    text-align: center !important;
-  }
-  #about .work1 .contact11 {
-    max-width: 100%;
-    font-size: 8pt;
-    text-align: center !important;
-  }
+
   #about .work11 {
     max-width: 100%;
     font-size: 12pt;
