@@ -276,12 +276,6 @@ html {
     font-size: 12pt;
     text-align: center !important;
   }
-  #about .work12 {
-    padding-left: 2pt !important;
-    max-width: 100%;
-    font-size: 12pt;
-    text-align: center !important;
-  }
 }
 
 @media screen and (max-width: 360px) {
